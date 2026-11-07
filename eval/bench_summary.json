@@ -1,0 +1,44 @@
+{
+ "base16": {
+  "weights_gb": 3.09,
+  "open": {
+   "avg_seconds": 3.64,
+   "avg_new_tokens": 96.3,
+   "tokens_per_sec": 26.5
+  },
+  "closed": {
+   "avg_seconds": 8.36,
+   "avg_new_tokens": 238.8,
+   "tokens_per_sec": 28.5
+  },
+  "peak_gb": 3.29
+ },
+ "ft16": {
+  "weights_gb": 3.1,
+  "open": {
+   "avg_seconds": 1.68,
+   "avg_new_tokens": 40.2,
+   "tokens_per_sec": 23.9
+  },
+  "closed": {
+   "avg_seconds": 1.5,
+   "avg_new_tokens": 42.4,
+   "tokens_per_sec": 28.2
+  },
+  "peak_gb": 3.28
+ },
+ "ft4bit": {
+  "weights_gb": 1.16,
+  "open": {
+   "avg_seconds": 2.24,
+   "avg_new_tokens": 38.9,
+   "tokens_per_sec": 17.4
+  },
+  "closed": {
+   "avg_seconds": 2.28,
+   "avg_new_tokens": 45.0,
+   "tokens_per_sec": 19.7
+  },
+  "peak_gb": 1.35
+ }
+}
