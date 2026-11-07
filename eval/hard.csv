@@ -1,0 +1,40 @@
+id,question,type,expected_clause,expected_chunk
+1,What happens when a UE can't get its context switching from RRC_INACTIVE to RRC_CONNECTED?,synthetic,9.2.2.4.1,s157-c2
+2,steps to change data path from direct to indirect for L2 U2N UE 5G?,synthetic,16.12.6.2,s438-c2
+3,NR node handover steps for UE IMS voice to UTRAN?,synthetic,9.3.4.1,s202-c0
+4,What are the limits for the network to help U2N Relay UEs know when to send discovery msgs?,synthetic,16.12.3,s424-c1
+5,Key tips for 5G to EPS user data forwarding indirect?,synthetic,9.3.2.5,s197-c0
+6,What's the point of Dest Layer-2 ID in MAC for sidelink comms?,synthetic,8.4,s144-c1
+7,how 2 do cell switch w/ CLTM in 5G?,synthetic,9.2.3.7.1,s179-c0
+8,Handover steps UE after CHO config?,synthetic,9.2.3.4.2,s170-c2
+9,User/control plane stack in multi-path relay w/ SL indirect path?,synthetic,16.21.2.1,s520-c0
+10,Key steps in phy layer proc for uplink channel?,synthetic,5.3.2,s71-c0
+11,how to switch Remote UE from indirect to direct path on same gNB?,synthetic,16.12.6.1,s437-c0
+12,gNB multicast sessions for UEs in RRC_INACTIVE?,synthetic,16.10.5.2,s394-c1
+13,RNA update when last gNB moves UE to idle?,synthetic,9.2.2.5,s159-c3
+14,What load info is tracked for balancing in 5G?,synthetic,15.5.1.2,s264-c0
+15,L2 U2N Relay UE paging for child UEs?,synthetic,16.12.5.6,s432-c2
+16,SRAP layer in L2 UE-Network Relay - what’s its function?,synthetic,16.12.2.1,s422-c0
+17,How does an IAB node find next hop for a packet not at dest?,synthetic,4.7.3.1,s24-c1
+18,How does gNB keep timing sync for uplink in 5G?,synthetic,9.2.9,s185-c0
+19,types of connection issues in inter-system mobility? how are they defined?,synthetic,15.5.2.2.3,s273-c0
+20,"IAB-node conn when it switches parent node, same/diff donor-CU?",synthetic,4.7.4.2,s29-c0
+21,SDT uplink steps for CG vs RACH?,synthetic,18.0,s559-c3
+22,NG-RAN node switch cap boost cells on/off based on load info?,synthetic,15.4.2.2,s251-c0
+23,RA report info for RACH opt?,synthetic,15.5.3,s280-c0
+24,UE data prefs & ops settings in 5G?,synthetic,7.9,s138-c2
+25,How to set up PC5 link btwn L2 U2U Rem UEs & Relay UE?,synthetic,16.12.7,s440-c1
+27,source gNB tasks DAPS handover downlink?,synthetic,9.2.3.2.2,s165-c4
+28,"Wht's ""successful handover"" in RACH vs non-RACH?",synthetic,15.5.2.2.2,s272-c1
+29,How does UE verify if gNB can handle peer's bitrate?,synthetic,16.2.1.1,s304-c1
+30,NG control plane interface funcs in 5G?,synthetic,4.3.1.2,s11-c0
+31,What's the IAB-node do in Integrated Access & Backhaul?,synthetic,4.7.1,s21-c0
+32,How to do a cell switch in intra-gNB LTM?,synthetic,9.2.3.5.2,s175-c0
+33,Types of NG-RAN nodes & how they link to each other & 5G Core?,synthetic,4.1,s6-c0
+34,NG-RAN node resrc alloc for slice w/ limited resrcs?,synthetic,16.3.3.2,s313-c0
+35,What O&M params for NTN need to go to gNB?,synthetic,16.14.7,s465-c0
+36,What does SDAP do in multicast setup?,synthetic,16.10.3,s390-c0
+37,Config for uplink HARQ modes & feedback - what to consider?,synthetic,16.14.2.1,s450-c2
+38,L2 U2N Remote UE steps to report candidate UEs to source gNB for reconfig?,synthetic,16.12.6.3,s439-c2
+39,PC5-RRC conn steps for L2 U2N Remote UE via L2 U2N Relay UE?,synthetic,16.12.5.1,s427-c1
+40,5G uplink ref signals for pos methods?,synthetic,5.3.6,s80-c0

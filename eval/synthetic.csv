@@ -1,0 +1,45 @@
+id,question,type,expected_clause,expected_chunk
+1,What process does the network follow when a user equipment (UE) fails to retrieve its context while transitioning from RRC_INACTIVE to RRC_CONNECTED?,synthetic,9.2.2.4.1,s157-c2
+2,What steps are involved in switching the data path from a direct path to an indirect path for a L2 U2N Remote UE in a 5G network?,synthetic,16.12.6.2,s438-c2
+3,What steps does the source NR node take to initiate a handover for a UE with ongoing IMS voice to UTRAN?,synthetic,9.3.4.1,s202-c0
+4,What thresholds does the network set to help U2N Relay UEs decide when to transmit Relay discovery messages?,synthetic,16.12.3,s424-c1
+5,What are the key principles for handling user plane data forwarding from 5G to EPS in an indirect forwarding scenario?,synthetic,9.3.2.5,s197-c0
+6,What is the purpose of the Destination Layer-2 ID in the MAC layer for sidelink communication?,synthetic,8.4,s144-c1
+7,What is the procedure for executing a cell switch using CLTM in 5G?,synthetic,9.2.3.7.1,s179-c0
+8,What steps does the UE take to complete the handover process to a candidate cell after receiving the CHO configuration?,synthetic,9.2.3.4.2,s170-c2
+9,How are the protocol stacks for the user plane and control plane structured in a multi-path relay scenario using an SL indirect path?,synthetic,16.21.2.1,s520-c0
+10,What are the key steps involved in the physical-layer processing for the uplink shared channel?,synthetic,5.3.2,s71-c0
+11,What procedures are involved in switching a Remote UE from an indirect path to a direct path under the same gNB for service continuity?,synthetic,16.12.6.1,s437-c0
+12,How does the gNB manage multicast sessions for UEs in RRC_INACTIVE state?,synthetic,16.10.5.2,s394-c1
+13,What happens during the RNA update procedure when the last serving gNB decides to move the UE to RRC_IDLE?,synthetic,9.2.2.5,s159-c3
+14,What types of load-related information are reported for load balancing in 5G networks?,synthetic,15.5.1.2,s264-c0
+15,How does the L2 U2N Relay UE handle paging delivery for child UEs?,synthetic,16.12.5.6,s432-c2
+16,What is the role of the SRAP sublayer in the L2 UE-to-Network Relay architecture?,synthetic,16.12.2.1,s422-c0
+17,How does an IAB-node determine the next hop for a packet that has not yet reached its destination?,synthetic,4.7.3.1,s24-c1
+18,How does the gNB maintain timing advance for uplink synchronization in 5G networks?,synthetic,9.2.9,s185-c0
+19,"What are the types of connection failures that can occur during inter-system mobility, and how are they defined?",synthetic,15.5.2.2.3,s273-c0
+20,What happens to the connectivity of an IAB-node when it migrates to a different parent node under the same or a different IAB-donor-CU?,synthetic,4.7.4.2,s29-c0
+21,What procedures are followed for subsequent uplink transmissions during the SDT process when using CG resources compared to RACH resources?,synthetic,18.0,s559-c3
+22,How does the NG-RAN node manage the switching on and off of capacity booster cells based on cell load information?,synthetic,15.4.2.2,s251-c0
+23,What information does the RA Report contain to assist with RACH optimization?,synthetic,15.5.3,s280-c0
+24,What preferences can a UE express regarding its data collection and operational configurations in a 5G network?,synthetic,7.9,s138-c2
+25,What are the steps involved in establishing a PC5 connection between L2 U2U Remote UEs and a Relay UE?,synthetic,16.12.7,s440-c1
+27,What are the responsibilities of the source gNB during a DAPS handover for downlink data?,synthetic,9.2.3.2.2,s165-c4
+28,"What does ""successful handover"" mean in the context of RACH-based and RACH-less procedures?",synthetic,15.5.2.2.2,s272-c1
+29,How does a UE check if a bit rate recommended by its peer can be supported by the gNB?,synthetic,16.2.1.1,s304-c1
+30,What are the main functions provided by the NG control plane interface in 5G networks?,synthetic,4.3.1.2,s11-c0
+31,What is the role of the IAB-node in the Integrated Access and Backhaul architecture?,synthetic,4.7.1,s21-c0
+32,What is the process for executing a cell switch in an intra-gNB LTM scenario?,synthetic,9.2.3.5.2,s175-c0
+33,What are the different types of NG-RAN nodes and how do they connect to each other and to the 5G Core network?,synthetic,4.1,s6-c0
+34,How can the NG-RAN node manage resource allocation for a slice when there is a shortage of dedicated resources?,synthetic,16.3.3.2,s313-c0
+35,What parameters related to Non-Terrestrial Networks (NTN) must be provided by Operations and Maintenance (O&M) to the gNB?,synthetic,16.14.7,s465-c0
+36,What functionalities does the SDAP sublayer provide in the multicast session architecture?,synthetic,16.10.3,s390-c0
+37,What are the considerations for configuring HARQ modes and feedback for uplink HARQ processes in a network?,synthetic,16.14.2.1,s450-c2
+38,What steps does a L2 U2N Remote UE take to report candidate L2 U2N Relay UEs to the source gNB for reconfiguration?,synthetic,16.12.6.3,s439-c2
+39,What are the steps involved in establishing a PC5-RRC connection for L2 U2N Remote UE through an L2 U2N Relay UE?,synthetic,16.12.5.1,s427-c1
+40,What types of uplink reference signals are defined for supporting positioning methods in 5G?,synthetic,5.3.6,s80-c0
+41,What is the capital of France?,out_of_scope,NONE,
+42,How do I configure a Cisco router?,out_of_scope,NONE,
+43,Who won the 2022 FIFA World Cup?,out_of_scope,NONE,
+44,What is the best programming language for web development?,out_of_scope,NONE,
+45,What is the price of the latest iPhone?,out_of_scope,NONE,

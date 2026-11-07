@@ -1,0 +1,354 @@
+[
+ {
+  "id": "1",
+  "kind": "answerable",
+  "question": "What happens when a UE can't get its context switching from RRC_INACTIVE to RRC_CONNECTED?",
+  "answer": "If the UE cannot be switched to RRC_CONNECTED, it stays in RRC_IDLE and may try again later or go back to RRC_INACTIVE if configured with RAN paging for context switch failure retry.",
+  "seconds": 5.69,
+  "new_tokens": 43
+ },
+ {
+  "id": "2",
+  "kind": "answerable",
+  "question": "steps to change data path from direct to indirect for L2 U2N UE 5G?",
+  "answer": "1. The gNB sends the RRCReconfiguration message with a new indirect data path configuration to the L2 U2N UE. 2. The L2 U2N UE updates its indirect data path information and starts using it. 3. The gNB may send an RRCReconfigurationComplete message after receiving the RRCReconfiguration Complete Report from the L2 U2N UE.",
+  "seconds": 6.4,
+  "new_tokens": 83
+ },
+ {
+  "id": "3",
+  "kind": "answerable",
+  "question": "NR node handover steps for UE IMS voice to UTRAN?",
+  "answer": "UE sends RRCReconfigurationComplete, then gNB sends Handover Request & Response, and finally UE gets RRCReconfigurated Complete in UTRAN.",
+  "seconds": 3.17,
+  "new_tokens": 34
+ },
+ {
+  "id": "4",
+  "kind": "answerable",
+  "question": "What are the limits for the network to help U2N Relay UEs know when to send discovery msgs?",
+  "answer": "The network can set a timer that triggers the UE to start sending RRCReconfiguration messages with Discovery Request, and it can also provide an indication of whether the next available cell is suitable for NCRU reception or not.",
+  "seconds": 4.04,
+  "new_tokens": 46
+ },
+ {
+  "id": "5",
+  "kind": "answerable",
+  "question": "Key tips for 5G to EPS user data forwarding indirect?",
+  "answer": "- Use NGAP procedure for direct mapping; use RRC message for indirect mapping.\n- Ensure QoS flow and packet are mapped correctly in both directions.\n- Verify that the source AMF forwards the UE context with correct mappings.",
+  "seconds": 3.52,
+  "new_tokens": 47
+ },
+ {
+  "id": "6",
+  "kind": "answerable",
+  "question": "What's the point of Dest Layer-2 ID in MAC for sidelink comms?",
+  "answer": "It helps identify which UE a packet is destined for, especially when multiple UEs are involved.",
+  "seconds": 1.55,
+  "new_tokens": 20
+ },
+ {
+  "id": "7",
+  "kind": "answerable",
+  "question": "how 2 do cell switch w/ CLTM in 5G?",
+  "answer": "UE can initiate a cell switch with CLTM, and the gNB decides if it's allowed based on its configuration. If allowed, UE gets an RRCReconfiguration message to set up the new cell.",
+  "seconds": 3.49,
+  "new_tokens": 43
+ },
+ {
+  "id": "8",
+  "kind": "answerable",
+  "question": "Handover steps UE after CHO config?",
+  "answer": "UE gets RRCReconfiguration msg w/CHO info, then goes to RRC_INACTIVE state with new cell as source and old cell as target.",
+  "seconds": 3.44,
+  "new_tokens": 32
+ },
+ {
+  "id": "9",
+  "kind": "answerable",
+  "question": "User/control plane stack in multi-path relay w/ SL indirect path?",
+  "answer": "SL indirect path is used for user control plane data forwarding, and the User Plane Forwarding Information Reference (UPFIR) can be configured to indicate which path(s) are preferred or not preferred based on QoS flow priorities.",
+  "seconds": 3.78,
+  "new_tokens": 47
+ },
+ {
+  "id": "10",
+  "kind": "answerable",
+  "question": "Key steps in phy layer proc for uplink channel?",
+  "answer": "1. RRC sends RACH to initiate UL transmission. 2. UE selects a PUSCH resource and transmits the first RLC SDU with an initial DL BFR value of zero. 3. gNB updates the DL BFR value based on the received RLC SDU. 4. UE continues transmitting RLC SDUs until all data is sent or a timeout occurs.",
+  "seconds": 6.4,
+  "new_tokens": 82
+ },
+ {
+  "id": "11",
+  "kind": "answerable",
+  "question": "how to switch Remote UE from indirect to direct path on same gNB?",
+  "answer": "Use RRCReconfiguration msg2 with new Direct Path Switching Request message and old Direct Path Switching Response msg1.",
+  "seconds": 2.6,
+  "new_tokens": 26
+ },
+ {
+  "id": "12",
+  "kind": "answerable",
+  "question": "gNB multicast sessions for UEs in RRC_INACTIVE?",
+  "answer": "gNB can initiate a multicast session with multiple UEs in RRC_IDLE or RRC_INACTIVE, using the same PDCP SN and SDAP ID as defined by the gNB.",
+  "seconds": 3.48,
+  "new_tokens": 40
+ },
+ {
+  "id": "13",
+  "kind": "answerable",
+  "question": "RNA update when last gNB moves UE to idle?",
+  "answer": "If the last serving gNB is moved out of coverage, it can trigger RNA update for the UE in RRC_INACTIVE state by sending an RNA Update Request message with a new RNA reference ID and old RNA reference ID(s).",
+  "seconds": 3.58,
+  "new_tokens": 47
+ },
+ {
+  "id": "14",
+  "kind": "answerable",
+  "question": "What load info is tracked for balancing in 5G?",
+  "answer": "Load information such as cell traffic, UE activity, and paging load are tracked to help with balancing.",
+  "seconds": 1.62,
+  "new_tokens": 21
+ },
+ {
+  "id": "15",
+  "kind": "answerable",
+  "question": "L2 U2N Relay UE paging for child UEs?",
+  "answer": "Yes, L2 U2N Relay UE can send Paging msg to child UEs in the same cell or different cells using a random P-RNTI.",
+  "seconds": 2.52,
+  "new_tokens": 33
+ },
+ {
+  "id": "16",
+  "kind": "answerable",
+  "question": "SRAP layer in L2 UE-Network Relay - what’s its function?",
+  "answer": "It provides the mapping between logical channels and physical channels, as well as the mapping of MAC SDUs to PDCP SDUs for RLC UM transmission.",
+  "seconds": 3.17,
+  "new_tokens": 33
+ },
+ {
+  "id": "17",
+  "kind": "answerable",
+  "question": "How does an IAB node find next hop for a packet not at dest?",
+  "answer": "It uses the next-hop address from the source UE context or, if not available, it can use the next-hop address provided by the last serving gNB in the source NG-RAN node's list of next hops to the target NG-RAN node.",
+  "seconds": 4.25,
+  "new_tokens": 52
+ },
+ {
+  "id": "18",
+  "kind": "answerable",
+  "question": "How does gNB keep timing sync for uplink in 5G?",
+  "answer": "gNB uses a clock reference from the UE and/or an external clock source to maintain timing synchronization with the network, ensuring that the uplink transmission is synchronized with the downlink reception.",
+  "seconds": 2.86,
+  "new_tokens": 38
+ },
+ {
+  "id": "19",
+  "kind": "answerable",
+  "question": "types of connection issues in inter-system mobility? how are they defined?",
+  "answer": "There are two types of connection issue: a radio link failure and an RRC failure. A radio link failure is when the UE cannot establish or maintain a radio link to the target cell, while an RRC failure occurs when the UE cannot establish or maintain an RRC connection with the source gNB.",
+  "seconds": 4.87,
+  "new_tokens": 62
+ },
+ {
+  "id": "20",
+  "kind": "answerable",
+  "question": "IAB-node conn when it switches parent node, same/diff donor-CU?",
+  "answer": "When the IAB-node switches to a different donor-CU, the new donor-CU may initiate an RRC connection establishment procedure with the target gNB and the old donor-CU may release the UE context associated with the source gNB.",
+  "seconds": 4.44,
+  "new_tokens": 50
+ },
+ {
+  "id": "21",
+  "kind": "answerable",
+  "question": "SDT uplink steps for CG vs RACH?",
+  "answer": "For CG, it's the same as in RACH. For RACH, there are additional steps: first, a random access procedure is performed; then, an SDT transmission is initiated by the UE with the appropriate priority and length.",
+  "seconds": 3.56,
+  "new_tokens": 49
+ },
+ {
+  "id": "22",
+  "kind": "answerable",
+  "question": "NG-RAN node switch cap boost cells on/off based on load info?",
+  "answer": "Yes, NG-RAN can configure the UE to perform cell switch capability boosting by indicating a list of candidate cells with higher priority for switching when the network is under high load.",
+  "seconds": 2.68,
+  "new_tokens": 36
+ },
+ {
+  "id": "23",
+  "kind": "answerable",
+  "question": "RA report info for RACH opt?",
+  "answer": "For RACH option 1, RA report info is provided in the RRC message; for RACH options 2 and 3, it's included in the MAC CE of the first PDCCH transmitted after the initial access preamble transmission.",
+  "seconds": 4.36,
+  "new_tokens": 50
+ },
+ {
+  "id": "24",
+  "kind": "answerable",
+  "question": "UE data prefs & ops settings in 5G?",
+  "answer": "UE can set data preference and operational settings like RACH timeout, paging interval, and cell selection hysteresis via OAM or NAS signalling.",
+  "seconds": 2.66,
+  "new_tokens": 31
+ },
+ {
+  "id": "25",
+  "kind": "answerable",
+  "question": "How to set up PC5 link btwn L2 U2U Rem UEs & Relay UE?",
+  "answer": "PC5 link is established between two L2 U2U Remote UEs and a Relay UE, using the same RACH resources as in the initial UL BAP configuration.",
+  "seconds": 2.64,
+  "new_tokens": 36
+ },
+ {
+  "id": "27",
+  "kind": "answerable",
+  "question": "source gNB tasks DAPS handover downlink?",
+  "answer": "Yes, source gNB can initiate a DAPS handover DL towards the target NG-RAN node using RRC message(s).",
+  "seconds": 1.99,
+  "new_tokens": 27
+ },
+ {
+  "id": "28",
+  "kind": "answerable",
+  "question": "Wht's \"successful handover\" in RACH vs non-RACH?",
+  "answer": "In RACH, successful handover means the UE is ready to transmit on the target cell after receiving the RACH complete message from the source gNB. In non-RACH, it means the UE can start transmitting PDCCHs or initiate random access procedure on the target cell.",
+  "seconds": 4.49,
+  "new_tokens": 58
+ },
+ {
+  "id": "29",
+  "kind": "answerable",
+  "question": "How does UE verify if gNB can handle peer's bitrate?",
+  "answer": "UE checks the supported max number of PDCP SDUs per RLC SDU for each QoS flow in the peer NGAP message, and verifies that this value is not less than the configured max number of PDCP SDUs per RLC SDU by the UE.",
+  "seconds": 5.18,
+  "new_tokens": 58
+ },
+ {
+  "id": "30",
+  "kind": "answerable",
+  "question": "NG control plane interface funcs in 5G?",
+  "answer": "It includes functions for NG-RAN node management, UE mobility and handover, as well as session management.",
+  "seconds": 1.7,
+  "new_tokens": 23
+ },
+ {
+  "id": "31",
+  "kind": "answerable",
+  "question": "What's the IAB-node do in Integrated Access & Backhaul?",
+  "answer": "It connects UEs to backhaul and provides access links for UEs, handling both direct and indirect backhauls.",
+  "seconds": 1.81,
+  "new_tokens": 25
+ },
+ {
+  "id": "32",
+  "kind": "answerable",
+  "question": "How to do a cell switch in intra-gNB LTM?",
+  "answer": "Intra-gNB LTM, the UE can initiate the cell switch procedure by sending an RRCReconfiguration message with the new target cell ID and the old source cell ID to the gNB. The gNB then triggers the NG-RAN node to perform the cell switch.",
+  "seconds": 4.26,
+  "new_tokens": 57
+ },
+ {
+  "id": "33",
+  "kind": "answerable",
+  "question": "Types of NG-RAN nodes & how they link to each other & 5G Core?",
+  "answer": "NG-RAN consists of two types: ng-eNB and ng-C. ng-eNB connects directly with UE, while ng-C connects with both UE and 5GC. They are connected via Xn interface for direct communication and via NG interface for indirect communication.",
+  "seconds": 4.94,
+  "new_tokens": 54
+ },
+ {
+  "id": "34",
+  "kind": "answerable",
+  "question": "NG-RAN node resrc alloc for slice w/ limited resrcs?",
+  "answer": "If the NG-RAN node resource allocation is not sufficient, it can request additional resources from the AMF using a dedicated RRC message.",
+  "seconds": 2.15,
+  "new_tokens": 29
+ },
+ {
+  "id": "35",
+  "kind": "answerable",
+  "question": "What O&M params for NTN need to go to gNB?",
+  "answer": "OAM parameters for NTN are sent from the gNB to the NTN node and vice versa, except for the RRC reconfiguration message which is only received by the NTN node.",
+  "seconds": 2.83,
+  "new_tokens": 37
+ },
+ {
+  "id": "36",
+  "kind": "answerable",
+  "question": "What does SDAP do in multicast setup?",
+  "answer": "SDAP sets up the RLC channels for MBS broadcast and unicast, and it may also set up DRBs for MBS unicast.",
+  "seconds": 2.26,
+  "new_tokens": 31
+ },
+ {
+  "id": "37",
+  "kind": "answerable",
+  "question": "Config for uplink HARQ modes & feedback - what to consider?",
+  "answer": "For uplink, the UE can use either RTT-based or RLF-based HARQ mode(s) and/or PUSCH/SLB-RSRP based feedback. For both, the UE may be configured with a number of active HARQ processes per transmission occasion.",
+  "seconds": 4.79,
+  "new_tokens": 56
+ },
+ {
+  "id": "38",
+  "kind": "answerable",
+  "question": "L2 U2N Remote UE steps to report candidate UEs to source gNB for reconfig?",
+  "answer": "1. RRCReconfiguration message from source gNB includes list of candidate UEs in the cell(s) where L2 U2N Remote UE is interested in serving as a remote UE. 2. L2 U2N Remote UE reports all candidate UEs it has learned via RRCReconfigurationComplete msg.",
+  "seconds": 5.38,
+  "new_tokens": 66
+ },
+ {
+  "id": "39",
+  "kind": "answerable",
+  "question": "PC5-RRC conn steps for L2 U2N Remote UE via L2 U2N Relay UE?",
+  "answer": "1. PC5-RRC connection establishment between the L2 U2N Remote UE and the L2 U2N Relay UE, including RACH selection by the L2 U2N Relay UE. 2. The L2 U2N Remote UE sends a PC5-RRCReconfiguration message to the L2 U2N Relay UE with the new NG-RAN node ID. 3. The L2 U2N Relay UE forwards this message to the target NG-RAN node. 4. The target NG-RAN node establishes an RRC connection with the L2 U2N Remote UE using the new NG-RAN node ID.",
+  "seconds": 11.14,
+  "new_tokens": 134
+ },
+ {
+  "id": "40",
+  "kind": "answerable",
+  "question": "5G uplink ref signals for pos methods?",
+  "answer": "Uplink reference signals are used to estimate the phase and frequency offsets of the transmitted signal, aiding in beam tracking and synchronization.",
+  "seconds": 2.06,
+  "new_tokens": 27
+ },
+ {
+  "id": "oos1",
+  "kind": "out_of_scope",
+  "question": "What is the capital of France?",
+  "answer": "The capital of France is Paris.",
+  "seconds": 0.63,
+  "new_tokens": 8
+ },
+ {
+  "id": "oos2",
+  "kind": "out_of_scope",
+  "question": "How do I configure a Cisco router?",
+  "answer": "Configure the IP address, subnet mask, and default gateway for the Cisco router.",
+  "seconds": 1.29,
+  "new_tokens": 17
+ },
+ {
+  "id": "oos3",
+  "kind": "out_of_scope",
+  "question": "Who won the 2022 FIFA World Cup?",
+  "answer": "France won the 2022 FIFA World Cup.",
+  "seconds": 1.0,
+  "new_tokens": 13
+ },
+ {
+  "id": "oos4",
+  "kind": "out_of_scope",
+  "question": "What is the best programming language for web development?",
+  "answer": "It depends on your personal preference and project requirements. Some developers prefer JavaScript due to its simplicity, while others might opt for Python or Ruby because of their readability and ease of use.",
+  "seconds": 2.78,
+  "new_tokens": 37
+ },
+ {
+  "id": "oos5",
+  "kind": "out_of_scope",
+  "question": "What is the price of the latest iPhone?",
+  "answer": "I don't have current pricing information for the latest iPhone model. Please check a reliable source for the most up-to-date prices.",
+  "seconds": 2.54,
+  "new_tokens": 27
+ }
+]
